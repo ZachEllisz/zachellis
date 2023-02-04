@@ -1,45 +1,57 @@
 <section class="container">
   <div class="flex-container">
-    <div>
+    <div class="min-text-width">
       <h1>
-        Well Hello There Employer Im <span class="highlight-text"
-          >Zach Ellis</span
-        >
+        Hello There Im <span class="highlight-text fl">Zach Ellis</span>
       </h1>
-      <p>I hail from Charleston West Virginia</p>
-      <p>
-        Im curently working on being a backend web developer my first databases
-        that im learning will be <span class="highlight-text">SQL MySQL</span> and
-        ill be learning <span class="highlight-text">PHP</span> as the language for
-        those databases
-      </p>
+      <hr />
+      <h2 class="mt">BackEnd Tech Im Learning Now</h2>
+      <hr />
+      <div class="flex-container mt">
+        <div class="item1">
+          <img
+            width="100"
+            height="100"
+            src="sqllogo.png"
+          />
+        </div>
+        <div class="item2">
+          <img
+            width="100"
+            height="100"
+            src="mysqllogo.png"
+          />
+        </div>
+        <div class="item3">
+          <img
+            width="100"
+            height="100"
+            src="phplogo.png"
+          />
+        </div>
+    </div>
     </div>
     <div>
       <img
         width="300"
         height="300"
         src="mobile_banner.jpg"
-        class="float-right"
+        class="big-img-border"
       />
     </div>
-    <div>
-      <img
-        width="300"
-        height="300"
-        src="pexels-dmitry-gornaev-8611160.jpg"
-        class="float-right"
-      />
-    </div>
+  </div>
+  <div class="flex-container">
+    <div></div>
   </div>
 </section>
 
 <style>
   .flex-container {
     display: flex;
-
     justify-content: space-evenly;
     align-items: flex-start;
     height: 100%;
+    width: 100%;
     padding: 15px;
     gap: 5px;
   }
@@ -50,12 +62,43 @@
     line-height: 2;
   }
 
-  img {
+  p {
+    font-size: 1.3rem;
+  }
+
+  .big-img-border {
     border: 1px solid whitesmoke;
     border-radius: 20px;
+    ma
   }
 
   .highlight-text {
     color: var(--color-primary-bright-green);
   }
+
+  .min-text-width {
+    max-width: 50%;
+  }
+
+  .mt {
+    margin-top: 50px;
+  }
+
+  .fl {
+    font-size: 2.5rem;
+  }
+
+  .flex-container-logos {
+
+  display: flex;
+
+  justify-content: center; 
+  align-items: flex-start;    
+
+  background-color: #bbdefb;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+
+}
 </style>
